@@ -162,7 +162,7 @@
                   <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                  <a type="button" class="btn btn-block btn-sm btn-warning">Reserve Table</a>
+                  <a type="button" class="btn btn-block btn-sm btn-warning" id="reserveButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -324,6 +324,11 @@
               $("#carouselButton").children("span").addClass('fa-pause');
           }
       });
+
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal('show');
+    });
+
     });
   </script>
 </body>
